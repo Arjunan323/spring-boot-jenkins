@@ -12,7 +12,7 @@ public class SpringBootJenkinsApplication {
 
 	
 	@GetMapping("/message/{name}")
-	public String displayMessage(@PathVariable(name = "name") String name) {
+	public String displayMessage(@PathVariable("name") String name) {
 		return "Hi , " + name + " Welcomr to Jenkins Test";
 		
 	}
